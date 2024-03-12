@@ -11,6 +11,18 @@ html {
 body {
   background-color: #fff;
 }
+.reveal {
+  transform: translateY(40px);
+  opacity: 0;
+  filter: blur(4px);
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+  filter: blur(0px);
+}
 .menu-bar {
   text-align: center;
   padding: 20px 10%;
