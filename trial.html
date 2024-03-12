@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+      }
+      .swiper-slide p {
+        color: #fff;
+        margin: 0;
+      }
+      .swiper-slide h1 {
+        padding-bottom: 60px;
+        font-size: 65px;
+        color: #fff;
+        font-family: "Dancing Script";
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .slide-one {
+        background-image: url(wedding-2595862_1920.jpg);
+        background-size: cover;
+      }
+      .slide-two {
+        background-image: url(wedding-1836315_1920.jpg);
+        background-size: cover;
+      }
+      .slide-three {
+        background-image: url(heart-529607_1280.jpg);
+        background-size: cover;
+      }
+      .slide-four {
+        background-image: url(couple-443600_1280.jpg);
+        background-size: cover;
+      }
+      .slide-five {
+        background-image: url(wedding-1836315_1920.jpg);
+        background-size: cover;
+      }
+      .slide-six {
+        background-image: url(wedding-1836315_1920.jpg);
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-one">
+          <p>01/06</p>
+          <h1>Moses Bliss & Marie</h1>
+        </div>
+        <div class="swiper-slide slide-two">
+          <p>02/06</p>
+          <h1>Wedding Photography</h1>
+        </div>
+        <div class="swiper-slide slide-three">
+          <p>03/06</p>
+          <h1>Portrait Photography</h1>
+        </div>
+        <div class="swiper-slide slide-four">
+          <p>04/06</p>
+          <h1>Wedding Portrait</h1>
+        </div>
+        <div class="swiper-slide slide-five">
+          <p>05/06</p>
+          <h1>Destination Wedding</h1>
+        </div>
+        <div class="swiper-slide slide-six">
+          <p>06/06</p>
+          <h1>Bridal Portrait</h1>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
